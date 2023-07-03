@@ -1,0 +1,4 @@
+com\test\demo\service\impl\HelloWorldServiceImpl.class
+com\test\demo\app\AppRunner.class
+com\test\demo\client\TestClient.class
+com\test\demo\service\HelloWorldService.class
