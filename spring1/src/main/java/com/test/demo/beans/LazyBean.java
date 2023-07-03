@@ -4,8 +4,9 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 @Component
-public class BeanA {
-    public BeanA() {
-        System.out.println("beanA constructor called");
+@Lazy
+public class LazyBean {
+    public LazyBean() {
+        System.out.println("I am lazy bean");
     }
 }
