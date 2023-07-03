@@ -6,7 +6,10 @@ import org.springframework.stereotype.Component;
 @Component(value = "bean2")
 public class BeanSecond {
 
-    public void print(String msg){
-        System.out.println("Bean :"+ this.getClass().getName()+" msg : "+ msg);
+    @Autowired
+    private BeanThird beanThird;
+
+    public String print(String msg){
+        return beanThird.print(msg);
     }
 }

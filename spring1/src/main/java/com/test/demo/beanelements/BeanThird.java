@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class BeanThird {
 
-    public void print(String msg){
-        System.out.println("Bean :"+ this.getClass().getName()+" msg : "+ msg);
+    public String print(String msg){
+        return "msg from upper bean: "+ msg;
     }
 }
